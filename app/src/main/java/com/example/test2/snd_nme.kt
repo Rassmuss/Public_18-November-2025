@@ -16,5 +16,13 @@ class snd_nme : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.ameno)
 
+        val image3: ImageView = findViewById(R.id.imageView)
+        image3.setImageResource(R.drawable.dfbgdfh)
+
+        val next: Button = findViewById(R.id.button2)
+        next.setOnClickListener {
+            val myIntent1 = Intent(this, MainActivity::class.java)
+            startActivityForResult(myIntent1, 0)
+        }
     }
 }

@@ -21,5 +21,8 @@ class MainActivity : AppCompatActivity() {
             val myIntent = Intent(this, snd_nme::class.java)
             startActivityForResult(myIntent, 0)
         }
+
+        val image2: ImageView = findViewById(R.id.imageView4)
+        image2.setImageResource(R.drawable.sgdf)
     }
 }
